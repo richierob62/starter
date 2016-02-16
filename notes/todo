@@ -1,0 +1,19 @@
+"plugins": ["react-autoprefix"],
+"babel-plugin-react-autoprefix": "^0.2.6",
+
+npm install --save-dev babel-plugin-react-transform
+npm install --save-dev react-transform-hmr
+
+"plugins": [
+    ["react-transform",
+        {
+            "transforms": [
+                {
+                  "transform": "react-transform-hmr",
+                  "imports": ["react"],
+                  "locals": ["module"]
+                }
+            ]
+        }
+    ]
+]

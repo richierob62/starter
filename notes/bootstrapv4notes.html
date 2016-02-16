@@ -1,0 +1,45 @@
+/////////////////////////////////////////// FLEX ///////////////////////////////////////////
+
+Open the _variables.scss file and find the $enable-flex variable.
+Change it from false to true.
+
+/////////////////////////////////////////// REBOOT ///////////////////////////////////////////
+
+Set background-color: #fff; on the <body>
+Use the $font-family-base, $font-size-base, and $line-height-base attributes as our typographic base
+Set the global link color via $link-color and apply link underlines only on :hover
+These styles can be found within _reboot.scss.
+
+/////////////////////////////////////////// MEDIA QUERIES ///////////////////////////////////////////
+
+// Extra small devices (portrait phones, less than ???px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 34em and up)
+@media (min-width: 34em) { ... }
+
+// Medium devices (tablets, 48em and up)
+@media (min-width: 48em) { ... }
+
+// Large devices (desktops, 62em and up)
+@media (min-width: 62em) { ... }
+
+// Extra large devices (large desktops, 75em and up)
+@media (min-width: 75em) { ... }
+
+
+@include media-breakpoint-up(xs) { ... }
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+
+// Example usage:
+@include media-breakpoint-up(sm) {
+  .some-class {
+    display: block;
+  }
+}
+
+
+
